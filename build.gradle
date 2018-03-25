@@ -12,7 +12,7 @@ repositories {
 
 jar {
     manifest {
-       attributes ('Main-Class': 'Main')
+       attributes ('Main-Class': 'zoo.Main')
     }
 }
 
@@ -28,5 +28,6 @@ jacocoTestReport {
     }
 }
 
-mainClassName = 'Main'
+sourceSets.main.java.srcDirs = ['src']
+mainClassName = 'zoo.Main'
 
